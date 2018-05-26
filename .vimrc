@@ -10,14 +10,14 @@
 " :he highlight-groups
 " :he cterm-colors
 set encoding=utf-8
-set tabstop=2
+set smartindent
+set tabstop=4
+set shiftwidth=4
+set expandtab
 set autoindent
-set smarttab
-set sw=4
 set et
 execute pathogen#infect()
 syntax on
-filetype plugin indent on
 set background=dark
 if version > 580
     " no guarantees for version 5.8 and below, but this makes it stop
@@ -123,5 +123,5 @@ set mouse=a
 nnoremap <C-W> <C-W><C-W>
 set ttymouse=sgr
 
-set shiftwidth=2
+set shiftwidth=4
 set number
