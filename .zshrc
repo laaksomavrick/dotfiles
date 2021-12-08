@@ -1,4 +1,4 @@
-ZSH_THEME="agnoster"
+PS1='%n@%m %~$ '
 
 eval "$(fnm env)"
 eval "$(rbenv init - zsh)"
