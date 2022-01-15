@@ -7,6 +7,7 @@ setopt PROMPT_SUBST
 PROMPT='${PWD/#$HOME/~} ${vcs_info_msg_0_} $ '
 
 # Version management for node
+export PATH=/home/laaksom/.fnm:$PATH
 eval "$(fnm env)"
 
 # Git aliases
