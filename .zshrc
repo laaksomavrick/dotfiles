@@ -10,6 +10,9 @@ PROMPT='${PWD/#$HOME/~} ${vcs_info_msg_0_} $ '
 export PATH=/home/laaksom/.fnm:$PATH
 eval "$(fnm env)"
 
+# Version management for ruby
+eval "$(rbenv init - zsh)"
+
 # Git aliases
 alias gst='git status'
 alias gp='git push'
