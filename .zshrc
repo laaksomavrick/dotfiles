@@ -13,6 +13,11 @@ eval "$(fnm env)"
 # Version management for ruby
 eval "$(rbenv init - zsh)"
 
+# Version management for python
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
+echo 'command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
+echo 'eval "$(pyenv init -)"' >> ~/.zshrc
+
 # Git aliases
 alias gst='git status'
 alias gp='git push'
