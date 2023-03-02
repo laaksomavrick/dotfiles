@@ -7,21 +7,22 @@ setopt PROMPT_SUBST
 PROMPT='${PWD/#$HOME/~} ${vcs_info_msg_0_} $ '
 
 # Version management for node
-export PATH=/home/laaksom/.fnm:$PATH
-eval "$(fnm env)"
+# export PATH=/home/laaksom/.fnm:$PATH
+# eval "$(fnm env)"
 
 # Version management for ruby
-eval "$(rbenv init - zsh)"
+# eval "$(rbenv init - zsh)"
 
 # Version management for python
-export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
+# export PYENV_ROOT="$HOME/.pyenv"
+# command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+# eval "$(pyenv init -)"
 
 
 # Git aliases
 alias gst='git status'
 alias gp='git push'
+alias gca='git commit --amend'
 alias nvm=fnm
 
 # Fuzzy searching
@@ -29,3 +30,6 @@ alias nvm=fnm
 
 # Tab completion
 autoload -Uz compinit && compinit
+
+# Remove redundant terminal history
+setopt HIST_IGNORE_DUPS
